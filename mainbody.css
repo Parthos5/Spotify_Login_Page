@@ -1,0 +1,239 @@
+.mainbodydiv{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    background-image: linear-gradient(75deg,#1ed760 20% ,blueviolet);
+    /*background-image: radial-gradient(#1ed760,blueviolet);*/
+}
+
+.mottodiv{
+    flex:3;
+    /*background-color: #1ed760;*/
+    display:flex;
+    flex-direction: column;
+    color: white;
+    flex-shrink: 7;
+    max-height: 200px;
+    height: 200px;
+}
+
+.mottodiv h2{
+    white-space: nowrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 58px;
+    /*margin-left: 55%;*/
+    margin-left: 31vw;
+}
+
+.music{
+    animation-name: music;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+ @keyframes music{
+    0%{
+        margin-left: -30vw;
+    }
+    100%{
+        margin-left: 31vw;
+    }
+ }
+
+.podcast{
+    animation-name: podcasts;
+    animation-duration: 0.9s;
+    animation-timing-function: ease;
+}
+ @keyframes podcasts{
+    0%{
+        margin-left: -30vw;
+    }
+    100%{
+        margin-left: 31vw;
+    }
+ }
+
+.home{
+    animation-name: home;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+}
+ @keyframes home{
+    0%{
+        margin-left: -30vw;
+    }
+    100%{
+        margin-left: 31vw;
+    }
+ }
+
+/*LOGIN FORM STARTS*/
+
+.loginformdiv{
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);
+    border: none;
+    border-radius: 8px;
+    flex:1.7;
+    margin-right: 5%;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 450.075px;
+    /*max-width: 450.075px;*/
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.brandsdiv{
+    
+    /*background-color: lightblue;*/
+    /*height:100vh;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brandsdiv button{
+    margin-top: 20px;
+    cursor: pointer;
+    min-width: 372.2px;
+}
+
+.facebooklogin{
+    height: 4em;
+    border-radius: 2em;
+    background-color:rgb(59,89,152);
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border: none;
+}
+
+.applelogin{
+    height: 4em;
+    border-radius: 2em;
+    background-color:black;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border: none;
+}
+
+.googlelogin{
+    height: 4em;
+    border-radius: 2em;
+    background-color: rgba(255,255,255,0.9);
+    color: black;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border: 1px solid rgb(135,135,135);
+}
+
+.phonelogin{
+    height: 4em;
+    border-radius: 2em;
+    background-color: rgba(255,255,255,0.9);
+    color: black;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border: 1px solid rgb(135,135,135);
+}
+
+.or{
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.inputdiv{
+    /*background-color: yellow;*/
+    margin-left: 10px;
+}
+.emaildiv{
+    margin-bottom: 15px;
+}
+
+.emailtext{
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    margin: 0%;
+}
+
+.emailinput{
+    width: 372.2px;
+    height: 45px;
+    border-radius: 4px;
+    border: 1px solid black;
+    font-weight: 400;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.fyp{
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0%;
+}
+
+.fyp:hover{
+    text-decoration: underline;
+}
+
+.redirectdiv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    /*background-color: lightblue;*/
+}
+
+.loginbutton{
+    background-color: #1ed760;
+    height:45px;
+    width: 150px;
+    border-radius: 22.5px;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border:none;
+    cursor: pointer;
+}
+
+/*LOGIN FORM ENDS*/
+
+@media (max-width: 1399px){
+
+    .mainbodydiv{
+        display:block;
+    }
+
+    .mottodiv{
+        /*padding-top:40px;*/
+        /*margin: -100%;*/
+        /*text-align: start;
+        padding-left: 85px auto; */
+        position: absolute;
+        opacity: 0;
+    }
+    
+    .mottodiv h2{
+        animation-name: align;
+        animation-duration: 0.1s;    
+    }
+ 
+    .loginformdiv{
+        width: auto;
+        margin-right: 0%;
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+}

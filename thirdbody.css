@@ -1,0 +1,12 @@
+.thirdbodydiv{
+    background-color: orangered;
+    border: 1px solid black;
+    padding-bottom: 75px;
+    margin: 100px;
+    border-radius: 25px;
+    background: linear-gradient(135deg,orangered,yellow);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);
+    border: none;
+}

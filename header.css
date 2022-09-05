@@ -1,0 +1,40 @@
+.headerdiv{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content:space-between;
+    margin-bottom: 0px;
+}
+
+.companydiv{
+    display:flex;
+    align-items: center;
+    margin-left: 12%;
+    /*background-color: lightblue;*/
+}
+
+.companydiv h1{
+    font-size: 25px;
+}
+
+.logo{
+    height: 40px;
+    margin-right: 5px;
+}
+
+.psddiv{
+    display: flex;
+    /*background-color: blueviolet;*/
+    justify-content: space-evenly;
+    width: 400px;
+    margin-right: 1%;
+}
+
+.psddiv h2{
+    margin-right: 10%;
+    cursor: pointer;
+}
+
+.psddiv h2:hover{
+    color: #1ed760;
+}
